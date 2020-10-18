@@ -77,12 +77,6 @@ namespace LiteraryTourism
             main_form.Show();
         }
 
-        private void Reg_lbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            this.Hide();
-            RegistrationForm reg_form = new RegistrationForm();
-            reg_form.Show();
-        }
 
         private void AuthForm_FormClosed(object sender, FormClosedEventArgs e)
         {

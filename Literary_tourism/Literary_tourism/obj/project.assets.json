@@ -12542,11 +12542,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ednar\\source\\repos\\Literary_tourism_full\\Literary_tourism\\Literary_tourism\\Literary_tourism\\Literary_tourism.csproj",
+      "projectUniqueName": "C:\\Users\\ednar\\source\\repos\\Literary_tourism\\Literary_tourism\\Literary_tourism.csproj",
       "projectName": "Literary_tourism",
-      "projectPath": "C:\\Users\\ednar\\source\\repos\\Literary_tourism_full\\Literary_tourism\\Literary_tourism\\Literary_tourism\\Literary_tourism.csproj",
+      "projectPath": "C:\\Users\\ednar\\source\\repos\\Literary_tourism\\Literary_tourism\\Literary_tourism.csproj",
       "packagesPath": "C:\\Users\\ednar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ednar\\source\\repos\\Literary_tourism_full\\Literary_tourism\\Literary_tourism\\Literary_tourism\\obj\\",
+      "outputPath": "C:\\Users\\ednar\\source\\repos\\Literary_tourism\\Literary_tourism\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

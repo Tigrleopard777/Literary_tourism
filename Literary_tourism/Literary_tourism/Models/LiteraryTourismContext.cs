@@ -150,7 +150,7 @@ namespace Literary_tourism.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql("server=localhost;UserId=user;Password=password;database=literary_tourism;");
+            optionsBuilder.UseMySql("server=localhost;UserId=root;Password=1234;database=literary_tourism;");
         }
     }
 }

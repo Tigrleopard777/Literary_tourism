@@ -35,7 +35,6 @@
             this.login_lbl = new System.Windows.Forms.Label();
             this.pass_txt = new System.Windows.Forms.TextBox();
             this.log_in_btn = new System.Windows.Forms.Button();
-            this.reg_lbl = new System.Windows.Forms.LinkLabel();
             this.go_main_lbl = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
@@ -89,21 +88,10 @@
             this.log_in_btn.UseVisualStyleBackColor = false;
             this.log_in_btn.Click += new System.EventHandler(this.LogIn_btn_Click);
             // 
-            // reg_lbl
-            // 
-            this.reg_lbl.AutoSize = true;
-            this.reg_lbl.Location = new System.Drawing.Point(438, 388);
-            this.reg_lbl.Name = "reg_lbl";
-            this.reg_lbl.Size = new System.Drawing.Size(193, 13);
-            this.reg_lbl.TabIndex = 9;
-            this.reg_lbl.TabStop = true;
-            this.reg_lbl.Text = "Еще нет аккаунта? Создайте новый!";
-            this.reg_lbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Reg_lbl_LinkClicked);
-            // 
             // go_main_lbl
             // 
             this.go_main_lbl.AutoSize = true;
-            this.go_main_lbl.Location = new System.Drawing.Point(209, 388);
+            this.go_main_lbl.Location = new System.Drawing.Point(318, 391);
             this.go_main_lbl.Name = "go_main_lbl";
             this.go_main_lbl.Size = new System.Drawing.Size(162, 13);
             this.go_main_lbl.TabIndex = 10;
@@ -119,7 +107,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(784, 461);
             this.Controls.Add(this.go_main_lbl);
-            this.Controls.Add(this.reg_lbl);
             this.Controls.Add(this.log_in_btn);
             this.Controls.Add(this.pass_txt);
             this.Controls.Add(this.login_lbl);
@@ -145,7 +132,6 @@
         private System.Windows.Forms.Label login_lbl;
         private System.Windows.Forms.TextBox pass_txt;
         private System.Windows.Forms.Button log_in_btn;
-        private System.Windows.Forms.LinkLabel reg_lbl;
         private System.Windows.Forms.LinkLabel go_main_lbl;
     }
 }

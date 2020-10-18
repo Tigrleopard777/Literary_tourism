@@ -32,6 +32,10 @@ namespace LiteraryTourism
         {
             InitializeComponent();
             user = user_auth;
+            if(user.User_type=="Admin")
+            {
+                reg_btn.Visible = true;
+            }
         }
 
 
@@ -110,6 +114,13 @@ namespace LiteraryTourism
             this.Hide();
             AuthForm auth_form = new AuthForm();
             auth_form.Show();
+        }
+
+        private void reg_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            RegistrationForm reg_form = new RegistrationForm();
+            reg_form.Show();
         }
     }
 }

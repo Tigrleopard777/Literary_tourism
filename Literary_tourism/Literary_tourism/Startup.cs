@@ -29,7 +29,7 @@ namespace Literary_tourism
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<LiteraryTourismContext>(opt =>
-               opt.UseMySql("server=localhost;UserId=user;Password=password;database=literary_tourism"));
+               opt.UseMySql("server=localhost;UserId=root;Password=1234;database=literary_tourism"));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddSwaggerGen(c =>

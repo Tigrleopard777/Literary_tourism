@@ -4,321 +4,40 @@
         <name>Literary_tourism</name>
     </assembly>
     <members>
-        <member name="M:Literary_tourism.Controllers.CommentMovieController.GetComments(System.Int32)">
-            <summary>
-            Get comments for movie by id.
-            </summary>
-            <param name="id">The unique movie id.</param>
-            <returns>List of comments.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.CommentMovieController.PostComment(Literary_tourism.Models.Comment_movie)">
-            <summary>
-            Add new comment for movie by id.
-            </summary>
-            <param name="comment">Custom object type "Comment_movie".</param>
-            <returns>List of comments.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.CommentMuseumController.GetComments(System.Int32)">
-            <summary>
-            Get comments for museum by id.
-            </summary>
-            <param name="id">The unique museum id.</param>
-            <returns>List of comments.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.CommentMuseumController.PostComment(Literary_tourism.Models.Comment_museum)">
-            <summary>
-            Add new comment for museum by id.
-            </summary>
-            <param name="comment">Custom object type "Comment_museum".</param>
-            <returns>List of comments.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.CommentPlaceController.GetComments(System.Int32)">
-            <summary>
-            Get comments for place by id.
-            </summary>
-            <param name="id">The unique place id.</param>
-            <returns>List of comments.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.CommentPlaceController.PostComment(Literary_tourism.Models.Comment_place)">
-            <summary>
-            Add new comment for place by id.
-            </summary>
-            <param name="comment">Custom object type "Comment_place".</param>
-            <returns>List of comments.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.CommentRouteController.GetComments(System.Int32)">
-            <summary>
-            Get comments for route by id.
-            </summary>
-            <param name="id">The unique route id.</param>
-            <returns>List of comments.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.CommentRouteController.PostComment(Literary_tourism.Models.Comment_route)">
-            <summary>
-            Add new comment for route by id.
-            </summary>
-            <param name="comment">Custom object type "Comment_route".</param>
-            <returns>List of comments.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.CommentSpectacleController.GetComments(System.Int32)">
-            <summary>
-            Get comments for spectacle by id.
-            </summary>
-            <param name="id">The unique spectacle id.</param>
-            <returns>List of comments.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.CommentSpectacleController.PostComment(Literary_tourism.Models.Comment_spectacle)">
-            <summary>
-            Add new comment for spectacle by id.
-            </summary>
-            <param name="comment">Custom object type "Comment_spectacle".</param>
-            <returns>List of comments.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.CommentWorkController.GetComments(System.Int32)">
-            <summary>
-            Get comments for work by id.
-            </summary>
-            <param name="id">The unique work id.</param>
-            <returns>List of comments.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.CommentWorkController.PostComment(Literary_tourism.Models.Comment_work)">
-            <summary>
-            Add new comment for work by id.
-            </summary>
-            <param name="comment">Custom object type "Comment_work".</param>
-            <returns>List of comments.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.MarkOfMovieController.PostMark(Literary_tourism.Models.Mark_of_movie)">
-            <summary>
-            Add new mark for movie.
-            </summary>
-            <param name="mark">Custom object type "Mark_of_movie".</param>
-            <returns>NoContetnt.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.MarkOfMuseumController.PostMark(Literary_tourism.Models.Mark_of_museum)">
-            <summary>
-            Add new mark for museum.
-            </summary>
-            <param name="mark">Custom object type "Mark_of_museum".</param>
-            <returns>NoContetnt.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.MarkOfPlaceController.PostMark(Literary_tourism.Models.Mark_of_place)">
-            <summary>
-            Add new mark for place.
-            </summary>
-            <param name="mark">Custom object type "Mark_of_place".</param>
-            <returns>NoContetnt.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.MarkOfRouteController.PostMark(Literary_tourism.Models.Mark_of_route)">
-            <summary>
-            Add new mark for route.
-            </summary>
-            <param name="mark">Custom object type "Mark_of_route".</param>
-            <returns>NoContetnt.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.MarkOfSpectacleController.PostMark(Literary_tourism.Models.Mark_of_spectacle)">
-            <summary>
-            Add new mark for spectacle.
-            </summary>
-            <param name="mark">Custom object type "Mark_of_spectacle".</param>
-            <returns>NoContetnt.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.MarkOfWorkController.PostMark(Literary_tourism.Models.Mark_of_work)">
-            <summary>
-            Add new mark for work.
-            </summary>
-            <param name="mark">Custom object type "Mark_of_work".</param>
-            <returns>NoContetnt.</returns>
-        </member>
         <member name="M:Literary_tourism.Controllers.MoviesController.GetMovies(System.String,System.String)">
             <summary>
-            Get list of movies with a search by title and name of the writer with whom the film is associated.
+            Deletes a specific TodoItem.
             </summary>
-            <param name="movie_title">Movie title.</param>
-            <param name="name">Full name of the writer.</param>
-            <returns>List of movies.</returns>
         </member>
         <member name="M:Literary_tourism.Controllers.MuseumsController.GetMuseums(System.String,System.String)">
             <summary>
-            Get list of museums with a search by museum name and name of the writer with whom the film is associated.
+            Deletes a specific TodoItem.
             </summary>
-            <param name="museum_title">Museum title.</param>
-            <param name="name">Full name of the writer.</param>
-            <returns>List of museums.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.PictureMuseumController.GetPictures(System.Int32)">
-            <summary>
-            Get pictures for museum by id.
-            </summary>
-            <param name="id">The unique museum id.</param>
-            <returns>List of pictures.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.PicturePlaceController.GetPictures(System.Int32)">
-            <summary>
-            Get pictures for place by id.
-            </summary>
-            <param name="id">The unique place id.</param>
-            <returns>List of pictures.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.PictureSpectacleController.GetPictures(System.Int32)">
-            <summary>
-            Get pictures for spectacle by id.
-            </summary>
-            <param name="id">The unique spectacle id.</param>
-            <returns>List of pictures.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.PictureTheaterController.GetPictures(System.Int32)">
-            <summary>
-            Get pictures for theater by id.
-            </summary>
-            <param name="id">The unique theater id.</param>
-            <returns>List of pictures.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.PictureWriterController.GetPictures(System.Int32)">
-            <summary>
-            Get pictures for writer by id.
-            </summary>
-            <param name="id">The unique writer id.</param>
-            <returns>List of pictures.</returns>
         </member>
         <member name="M:Literary_tourism.Controllers.PlacesController.GetPlaces(System.String,System.String)">
             <summary>
-            Get list of places with a search by place name and name of the writer with whom the film is associated.
+            Deletes a specific TodoItem.
             </summary>
-            <param name="place_name">Place name.</param>
-            <param name="name">Full name of the writer.</param>
-            <returns>List of places.</returns>
         </member>
         <member name="M:Literary_tourism.Controllers.PlaceWorkController.GetPlaces(System.String,System.String,System.String)">
             <summary>
-            Get list of places with a search by place name, name of the writer with whom the place is associated
-            and the name of the work with which it is associated.
+            Deletes a specific TodoItem.
             </summary>
-            <param name="place_name">Place name.</param>
-            <param name="name">Full name of the writer.</param>
-            <param name="work_name">Title of the work.</param>
-            <returns>List of places.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.RouteMovieController.GetRouteMovie(System.Int32)">
-            <summary>
-            Get list of movies associated with a route by id of the route.
-            </summary>
-            <param name="id">The unique route id.</param>
-            <returns>List of movies associated with a route.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.RouteMovieController.PostRouteMovie(Literary_tourism.Models.Route_movie)">
-            <summary>
-            Add movie to route
-            </summary>
-            <param name="route_movie">Custom object type "Route_movie".</param>
-            <returns>NoContent.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.RouteMuseumController.GetRouteMuseum(System.Int32)">
-            <summary>
-            Get list of museums associated with a route by id of the route.
-            </summary>
-            <param name="id">The unique route id.</param>
-            <returns>List of musseums associated with a route.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.RouteMuseumController.PostRouteMuseum(Literary_tourism.Models.Route_museum)">
-            <summary>
-            Add museum to route
-            </summary>
-            <param name="route_museum">Custom object type "Route_museum".</param>
-            <returns>NoContent.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.RoutePlaceController.GetRoutePlace(System.Int32)">
-            <summary>
-            Get list of places associated with a route by id of the route.
-            </summary>
-            <param name="id">The unique route id.</param>
-            <returns>List of places associated with a route.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.RoutePlaceController.PostRoutePlace(Literary_tourism.Models.Route_place)">
-            <summary>
-            Add place to route
-            </summary>
-            <param name="route_place">Custom object type "Route_place".</param>
-            <returns>NoContent.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.RoutesController.GetRoutes(System.String,System.String,System.String)">
-            <summary>
-            Get list of routes with a search by route name, name of the writer with whom the route is associated 
-            and nick of the user creates this route.
-            </summary>
-            <param name="route_name">Title of the route.</param>
-            <param name="name">Full name of the writer.</param>
-            <param name="nick">Nick of the user created this route.</param>
-            <returns>List of routes.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.RoutesController.PostRoute(Literary_tourism.Models.Routes)">
-            <summary>
-            Add new routed.
-            </summary>
-            <param name="route">Custom object type "Routes"</param>
-            <returns>List of routes, where name of route like name of this route.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.RouteSpectacleController.GetRouteSpectacle(System.Int32)">
-            <summary>
-            Get list of spectacles associated with a route by id of the route.
-            </summary>
-            <param name="id">The unique route id.</param>
-            <returns>List of spectacles associated with a route.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.RouteSpectacleController.PostRouteSpectacle(Literary_tourism.Models.Route_spectacle)">
-            <summary>
-            Add spectacle to route
-            </summary>
-            <param name="route_spectacle">Custom object type "Route_spectacle".</param>
-            <returns>NoContent.</returns>
         </member>
         <member name="M:Literary_tourism.Controllers.SpectaclesController.GetSpectacles(System.String,System.String,System.String)">
             <summary>
-            Get list of spectacles with a search by theater name, spectacle title 
-            and name of the writer with whom the spectacle is associated.
+            Deletes a specific TodoItem.
             </summary>
-            <param name="theater_name">Theater name.</param>
-            <param name="writer_name">Full name of the writer.</param>
-            <param name="spectacle_title">Title of the spectacle.</param>
-            <returns>List of spectacles.</returns>
         </member>
         <member name="M:Literary_tourism.Controllers.TheatersController.GetTheaters(System.String,System.String)">
             <summary>
-            Get list of theaters with a search by theater name and spectacle title.
+            Deletes a specific TodoItem.
             </summary>
-            <param name="theater_name">Theater name.</param>
-            <param name="spectacle_title">Title of the spectacle.</param>
-            <returns>List of Theaters.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.UsersController.GetUser(System.String,System.String)">
-            <summary>
-            Get user by login and password.
-            </summary>
-            <param name="log">User login.</param>
-            <param name="pass">User password.</param>
-            <returns>Custom object type "Users".</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.UsersController.PostUser(Literary_tourism.Models.Users)">
-            <summary>
-            Add new user.
-            </summary>
-            <param name="user">Custom object type "Users".</param>
-            <returns>Added user.</returns>
         </member>
         <member name="M:Literary_tourism.Controllers.WorksController.GetWorks(System.String,System.String)">
             <summary>
-            Get list of works with a search by work name and name of the writer with whom the work is associated.
+            Deletes a specific TodoItem.
             </summary>
-            <param name="work_name">Title of the work.</param>
-            <param name="name">Full name of the writer.</param>
-            <returns>List of works.</returns>
-        </member>
-        <member name="M:Literary_tourism.Controllers.WritersController.GetWriter(System.String)">
-            <summary>
-            Get list of writers with a search by writer full name.
-            </summary>
-            <param name="name">Full name of the writer.</param>
-            <returns>List of writers.</returns>
         </member>
     </members>
 </doc>

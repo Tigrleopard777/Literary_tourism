@@ -40,6 +40,7 @@
             this.icon_picture = new System.Windows.Forms.PictureBox();
             this.places_works_btn = new System.Windows.Forms.Button();
             this.exit_btn = new System.Windows.Forms.Button();
+            this.reg_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.icon_picture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -155,12 +156,24 @@
             this.exit_btn.UseVisualStyleBackColor = true;
             this.exit_btn.Click += new System.EventHandler(this.exit_btn_Click);
             // 
+            // reg_btn
+            // 
+            this.reg_btn.Location = new System.Drawing.Point(582, 406);
+            this.reg_btn.Name = "reg_btn";
+            this.reg_btn.Size = new System.Drawing.Size(190, 23);
+            this.reg_btn.TabIndex = 18;
+            this.reg_btn.Text = "Добавить нового пользователя";
+            this.reg_btn.UseVisualStyleBackColor = true;
+            this.reg_btn.Visible = false;
+            this.reg_btn.Click += new System.EventHandler(this.reg_btn_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(784, 461);
+            this.Controls.Add(this.reg_btn);
             this.Controls.Add(this.exit_btn);
             this.Controls.Add(this.places_works_btn);
             this.Controls.Add(this.icon_picture);
@@ -196,6 +209,7 @@
         private System.Windows.Forms.PictureBox icon_picture;
         private System.Windows.Forms.Button places_works_btn;
         private System.Windows.Forms.Button exit_btn;
+        private System.Windows.Forms.Button reg_btn;
     }
 }
 
