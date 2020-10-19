@@ -12,3 +12,17 @@ C:\Users\ednar\source\repos\Literary_tourism\Literary_tourism\obj\Release\netcor
 C:\Users\ednar\source\repos\Literary_tourism\Literary_tourism\obj\Release\netcoreapp2.1\Literary_tourism.RazorTargetAssemblyInfo.cache
 C:\Users\ednar\source\repos\Literary_tourism\Literary_tourism\obj\Release\netcoreapp2.1\Literary_tourism.dll
 C:\Users\ednar\source\repos\Literary_tourism\Literary_tourism\obj\Release\netcoreapp2.1\Literary_tourism.pdb
+C:\Users\ednar\source\repos\Literary_tourism_full\Literary_tourism\Literary_tourism\Literary_tourism\Literary_tourism\bin\Release\netcoreapp2.1\Literary_tourism.deps.json
+C:\Users\ednar\source\repos\Literary_tourism_full\Literary_tourism\Literary_tourism\Literary_tourism\Literary_tourism\bin\Release\netcoreapp2.1\Literary_tourism.runtimeconfig.json
+C:\Users\ednar\source\repos\Literary_tourism_full\Literary_tourism\Literary_tourism\Literary_tourism\Literary_tourism\bin\Release\netcoreapp2.1\Literary_tourism.runtimeconfig.dev.json
+C:\Users\ednar\source\repos\Literary_tourism_full\Literary_tourism\Literary_tourism\Literary_tourism\Literary_tourism\bin\Release\netcoreapp2.1\Literary_tourism.dll
+C:\Users\ednar\source\repos\Literary_tourism_full\Literary_tourism\Literary_tourism\Literary_tourism\Literary_tourism\bin\Release\netcoreapp2.1\Literary_tourism.pdb
+C:\Users\ednar\source\repos\Literary_tourism_full\Literary_tourism\Literary_tourism\Literary_tourism\Literary_tourism\obj\Release\netcoreapp2.1\Literary_tourism.csprojAssemblyReference.cache
+C:\Users\ednar\source\repos\Literary_tourism_full\Literary_tourism\Literary_tourism\Literary_tourism\Literary_tourism\obj\Release\netcoreapp2.1\Literary_tourism.csproj.CoreCompileInputs.cache
+C:\Users\ednar\source\repos\Literary_tourism_full\Literary_tourism\Literary_tourism\Literary_tourism\Literary_tourism\obj\Release\netcoreapp2.1\Literary_tourism.RazorAssemblyInfo.cache
+C:\Users\ednar\source\repos\Literary_tourism_full\Literary_tourism\Literary_tourism\Literary_tourism\Literary_tourism\obj\Release\netcoreapp2.1\Literary_tourism.RazorAssemblyInfo.cs
+C:\Users\ednar\source\repos\Literary_tourism_full\Literary_tourism\Literary_tourism\Literary_tourism\Literary_tourism\obj\Release\netcoreapp2.1\Literary_tourism.AssemblyInfoInputs.cache
+C:\Users\ednar\source\repos\Literary_tourism_full\Literary_tourism\Literary_tourism\Literary_tourism\Literary_tourism\obj\Release\netcoreapp2.1\Literary_tourism.AssemblyInfo.cs
+C:\Users\ednar\source\repos\Literary_tourism_full\Literary_tourism\Literary_tourism\Literary_tourism\Literary_tourism\obj\Release\netcoreapp2.1\Literary_tourism.RazorTargetAssemblyInfo.cache
+C:\Users\ednar\source\repos\Literary_tourism_full\Literary_tourism\Literary_tourism\Literary_tourism\Literary_tourism\obj\Release\netcoreapp2.1\Literary_tourism.dll
+C:\Users\ednar\source\repos\Literary_tourism_full\Literary_tourism\Literary_tourism\Literary_tourism\Literary_tourism\obj\Release\netcoreapp2.1\Literary_tourism.pdb

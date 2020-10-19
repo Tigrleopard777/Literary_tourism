@@ -19,11 +19,11 @@ namespace Literary_tourism.Controllers
     [ApiController]
     public class RouteMovieController : ControllerBase
     {
-        private readonly LiteraryTourismContext _context;
+        private readonly LiteraryTourismContext db;
 
         public RouteMovieController(LiteraryTourismContext context)
         {
-            _context = context;
+            db = context;
         }
 
         /// <summary>
@@ -34,8 +34,8 @@ namespace Literary_tourism.Controllers
         [HttpGet]
         public async Task<IActionResult> GetRouteMovie(int id)
         {
-            using (LiteraryTourismContext db = new LiteraryTourismContext())
-            {
+            //using (LiteraryTourismContext db = new LiteraryTourismContext())
+            //{
                 if (Request.Query.ContainsKey("id"))
                 {
                     id = Convert.ToInt32((Request.Query.FirstOrDefault(p => p.Key == "id").Value));
@@ -68,7 +68,7 @@ namespace Literary_tourism.Controllers
                 return Ok(movies_);
 
 
-            }
+            //}
         }
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Literary_tourism.Controllers
         [HttpPost]
         public async Task<IActionResult> PostRouteMovie([FromBody] Route_movie route_movie)
         {
-            using (LiteraryTourismContext db = new LiteraryTourismContext())
-            {
+            //using (LiteraryTourismContext db = new LiteraryTourismContext())
+            //{
                 if (!ModelState.IsValid)
                 {
                     return BadRequest(ModelState);
@@ -88,7 +88,7 @@ namespace Literary_tourism.Controllers
                 db.Route_movie.Add(route_movie);
                 await db.SaveChangesAsync();
                 return NoContent();
-            }
+            //}
         }
     }
 }

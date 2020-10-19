@@ -19,11 +19,11 @@ namespace Literary_tourism.Controllers
     [ApiController]
     public class MoviesController : ControllerBase
     {
-        private readonly LiteraryTourismContext _context;
+        private readonly LiteraryTourismContext db;
 
         public MoviesController(LiteraryTourismContext context)
         {
-            _context = context;
+            db = context;
         }
 
         /// <summary>
@@ -44,8 +44,8 @@ namespace Literary_tourism.Controllers
             {
                 name = (Request.Query.FirstOrDefault(p => p.Key == "name").Value);
             }
-            using (LiteraryTourismContext db = new LiteraryTourismContext())
-            {
+            //using (LiteraryTourismContext db = new LiteraryTourismContext())
+            //{
                 if (!ModelState.IsValid)
                 {
                     return BadRequest(ModelState);
@@ -81,7 +81,7 @@ namespace Literary_tourism.Controllers
                 }
 
                 return Ok(movies_);
-            }
+           // }
         }
     }
 }

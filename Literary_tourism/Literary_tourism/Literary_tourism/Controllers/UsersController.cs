@@ -19,11 +19,11 @@ namespace Literary_tourism.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
-        private readonly LiteraryTourismContext _context;
+        private readonly LiteraryTourismContext db;
 
         public UsersController(LiteraryTourismContext context)
         {
-            _context = context;
+            db = context;
         }
 
         /// <summary>
@@ -41,8 +41,8 @@ namespace Literary_tourism.Controllers
                 log = (Request.Query.FirstOrDefault(p => p.Key == "log").Value);
                 pass = (Request.Query.FirstOrDefault(p => p.Key == "pass").Value);
             }
-            using (LiteraryTourismContext db = new LiteraryTourismContext())
-            {
+            //using (LiteraryTourismContext db = new LiteraryTourismContext())
+            //{
                 if (!ModelState.IsValid)
                 {
                     return BadRequest(ModelState);
@@ -59,7 +59,7 @@ namespace Literary_tourism.Controllers
                 }
 
                 return Ok(user1);
-            }
+            //}
         }
 
         /// <summary>
@@ -70,8 +70,8 @@ namespace Literary_tourism.Controllers
         [HttpPost]
         public async Task<IActionResult> PostUser([FromBody] Users user)
         {
-            using (LiteraryTourismContext db = new LiteraryTourismContext())
-            {
+            //using (LiteraryTourismContext db = new LiteraryTourismContext())
+            //{
                 if (!ModelState.IsValid)
                 {
                     return BadRequest(ModelState);
@@ -79,7 +79,7 @@ namespace Literary_tourism.Controllers
                 db.Users.Add(user);
                 await db.SaveChangesAsync();
                 return CreatedAtAction(nameof(GetUser), new { log=user.Login, pass=user.Password }, user);
-            }
+            //}
         }
 
 

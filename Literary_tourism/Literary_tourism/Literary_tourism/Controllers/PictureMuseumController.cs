@@ -19,11 +19,11 @@ namespace Literary_tourism.Controllers
     [ApiController]
     public class PictureMuseumController : ControllerBase
     {
-        private readonly LiteraryTourismContext _context;
+        private readonly LiteraryTourismContext db;
 
         public PictureMuseumController(LiteraryTourismContext context)
         {
-            _context = context;
+            db = context;
         }
 
         /// <summary>
@@ -34,8 +34,8 @@ namespace Literary_tourism.Controllers
         [HttpGet]
         public async Task<IActionResult> GetPictures(int id)
         {
-            using (LiteraryTourismContext db = new LiteraryTourismContext())
-            {
+            //using (LiteraryTourismContext db = new LiteraryTourismContext())
+            //{
                 if (Request.Query.ContainsKey("id"))
                 {
                     id = Convert.ToInt32( (Request.Query.FirstOrDefault(p => p.Key == "id").Value));
@@ -66,7 +66,7 @@ namespace Literary_tourism.Controllers
                 return Ok(pictures_);
 
 
-            }
+            //}
         }
     }
 }

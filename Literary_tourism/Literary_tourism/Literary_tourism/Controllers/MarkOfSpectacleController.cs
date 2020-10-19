@@ -19,11 +19,11 @@ namespace Literary_tourism.Controllers
     [ApiController]
     public class MarkOfSpectacleController : ControllerBase
     {
-        private readonly LiteraryTourismContext _context;
+        private readonly LiteraryTourismContext db;
 
         public MarkOfSpectacleController(LiteraryTourismContext context)
         {
-            _context = context;
+            db = context;
         }
 
 
@@ -35,8 +35,8 @@ namespace Literary_tourism.Controllers
         [HttpPost]
         public async Task<IActionResult> PostMark([FromBody] Mark_of_spectacle mark)
         {
-            using (LiteraryTourismContext db = new LiteraryTourismContext())
-            {
+            //using (LiteraryTourismContext db = new LiteraryTourismContext())
+            //{
                 if (!ModelState.IsValid)
                 {
                     return BadRequest(ModelState);
@@ -66,7 +66,7 @@ namespace Literary_tourism.Controllers
                     await db.SaveChangesAsync();
                 }
                 return NoContent();
-            }
+            //}
         }
     }
 }

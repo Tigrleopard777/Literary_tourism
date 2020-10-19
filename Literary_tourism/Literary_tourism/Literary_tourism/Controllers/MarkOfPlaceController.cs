@@ -19,11 +19,11 @@ namespace Literary_tourism.Controllers
     [ApiController]
     public class MarkOfPlaceController : ControllerBase
     {
-        private readonly LiteraryTourismContext _context;
+        private readonly LiteraryTourismContext db;
 
         public MarkOfPlaceController(LiteraryTourismContext context)
         {
-            _context = context;
+            db = context;
         }
 
         /// <summary>
@@ -34,8 +34,8 @@ namespace Literary_tourism.Controllers
         [HttpPost]
         public async Task<IActionResult> PostMark([FromBody] Mark_of_place mark)
         {
-            using (LiteraryTourismContext db = new LiteraryTourismContext())
-            {
+            //using (LiteraryTourismContext db = new LiteraryTourismContext())
+            //{
                 if (!ModelState.IsValid)
                 {
                     return BadRequest(ModelState);
@@ -65,7 +65,7 @@ namespace Literary_tourism.Controllers
                     await db.SaveChangesAsync();
                 }
                 return NoContent();
-            }
+            //}
         }
     }
 }

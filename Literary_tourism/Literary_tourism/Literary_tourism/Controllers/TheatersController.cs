@@ -19,11 +19,11 @@ namespace Literary_tourism.Controllers
     [ApiController]
     public class TheatersController : ControllerBase
     {
-        private readonly LiteraryTourismContext _context;
+        private readonly LiteraryTourismContext db;
 
         public TheatersController(LiteraryTourismContext context)
         {
-            _context = context;
+            db = context;
         }
 
         /// <summary>
@@ -35,8 +35,8 @@ namespace Literary_tourism.Controllers
         [HttpGet]
         public async Task<IActionResult> GetTheaters(string theater_name = "", string spectacle_title = "")
         {
-            using (LiteraryTourismContext db = new LiteraryTourismContext())
-            {
+            //using (LiteraryTourismContext db = new LiteraryTourismContext())
+            //{
                 if (Request.Query.ContainsKey("theater_name"))
                 {
                     theater_name = (Request.Query.FirstOrDefault(p => p.Key == "theater_name").Value);
@@ -103,7 +103,7 @@ namespace Literary_tourism.Controllers
                 }
 
 
-            }
+            //}
         }
     }
 }

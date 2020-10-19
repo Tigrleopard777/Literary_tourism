@@ -19,11 +19,11 @@ namespace Literary_tourism.Controllers
     [ApiController]
     public class RoutePlaceController : ControllerBase
     {
-        private readonly LiteraryTourismContext _context;
+        private readonly LiteraryTourismContext db;
 
         public RoutePlaceController(LiteraryTourismContext context)
         {
-            _context = context;
+            db = context;
         }
 
         /// <summary>
@@ -34,8 +34,8 @@ namespace Literary_tourism.Controllers
         [HttpGet]
         public async Task<IActionResult> GetRoutePlace(int id)
         {
-            using (LiteraryTourismContext db = new LiteraryTourismContext())
-            {
+            //using (LiteraryTourismContext db = new LiteraryTourismContext())
+            //{
                 if (Request.Query.ContainsKey("id"))
                 {
                     id = Convert.ToInt32((Request.Query.FirstOrDefault(p => p.Key == "id").Value));
@@ -67,7 +67,7 @@ namespace Literary_tourism.Controllers
                     return NotFound();
                 }
                 return Ok(places_);
-            }
+            //}
         }
 
         /// <summary>
@@ -78,8 +78,8 @@ namespace Literary_tourism.Controllers
         [HttpPost]
         public async Task<IActionResult> PostRoutePlace([FromBody] Route_place route_place)
         {
-            using (LiteraryTourismContext db = new LiteraryTourismContext())
-            {
+            //using (LiteraryTourismContext db = new LiteraryTourismContext())
+            //{
                 if (!ModelState.IsValid)
                 {
                     return BadRequest(ModelState);
@@ -87,7 +87,7 @@ namespace Literary_tourism.Controllers
                 db.Route_place.Add(route_place);
                 await db.SaveChangesAsync();
                 return NoContent();
-            }
+            //}
         }
     }
 }

@@ -148,9 +148,9 @@ namespace Literary_tourism.Models
             //     .IsUnique();
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseMySql("server=localhost;UserId=user;Password=password;database=literary_tourism;");
-        }
+       // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+       // {
+       //     optionsBuilder.UseMySql("server=localhost;UserId=user;Password=password;database=literary_tourism;");
+       // }
     }
 }

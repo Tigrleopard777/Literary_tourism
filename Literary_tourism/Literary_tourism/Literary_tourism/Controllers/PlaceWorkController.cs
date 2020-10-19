@@ -19,11 +19,11 @@ namespace Literary_tourism.Controllers
     [ApiController]
     public class PlaceWorkController : ControllerBase
     {
-        private readonly LiteraryTourismContext _context;
+        private readonly LiteraryTourismContext db;
 
         public PlaceWorkController(LiteraryTourismContext context)
         {
-            _context = context;
+            db = context;
         }
 
         /// <summary>
@@ -37,8 +37,8 @@ namespace Literary_tourism.Controllers
         [HttpGet]
         public async Task<IActionResult> GetPlaces(string place_name = "", string name = "", string work_name="")
         {
-            using (LiteraryTourismContext db = new LiteraryTourismContext())
-            {
+            //using (LiteraryTourismContext db = new LiteraryTourismContext())
+            //{
                 if (Request.Query.ContainsKey("place_name"))
                 {
                     place_name = (Request.Query.FirstOrDefault(p => p.Key == "place_name").Value);
@@ -101,7 +101,7 @@ namespace Literary_tourism.Controllers
                 return Ok(places_);
 
 
-            }
+            //}
         }
     }
 }

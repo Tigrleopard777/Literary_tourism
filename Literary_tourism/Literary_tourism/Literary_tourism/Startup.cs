@@ -31,7 +31,7 @@ namespace Literary_tourism
             services.AddDbContext<LiteraryTourismContext>(opt =>
                opt.UseMySql("server=localhost;UserId=user;Password=password;database=literary_tourism"));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-
+            /*
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
@@ -39,6 +39,7 @@ namespace Literary_tourism
                 var xmlPath = "C:/Users/ednar/source/repos/Literary_tourism/Literary_tourism/Documentation.xml";
                 c.IncludeXmlComments(xmlPath);
             });
+            */
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,16 +55,17 @@ namespace Literary_tourism
             }
 
             // Enable middleware to serve generated Swagger as a JSON endpoint.
-            app.UseSwagger();
+            //app.UseSwagger();
 
            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
            // specifying the Swagger JSON endpoint.
+           /*
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("./swagger/v1/swagger.json", "My API V1");
                 c.RoutePrefix = string.Empty;
             });
-
+            */
             app.UseHttpsRedirection();
             app.UseMvc();
         }

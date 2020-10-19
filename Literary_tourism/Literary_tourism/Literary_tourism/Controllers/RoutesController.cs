@@ -19,11 +19,11 @@ namespace Literary_tourism.Controllers
     [ApiController]
     public class RoutesController : ControllerBase
     {
-        private readonly LiteraryTourismContext _context;
+        private readonly LiteraryTourismContext db;
 
         public RoutesController(LiteraryTourismContext context)
         {
-            _context = context;
+            db = context;
         }
 
         /// <summary>
@@ -50,8 +50,8 @@ namespace Literary_tourism.Controllers
             {
                 nick = (Request.Query.FirstOrDefault(p => p.Key == "nick").Value);
             }
-            using (LiteraryTourismContext db = new LiteraryTourismContext())
-            {
+            //using (LiteraryTourismContext db = new LiteraryTourismContext())
+            //{
                 if (!ModelState.IsValid)
                 {
                     return BadRequest(ModelState);
@@ -84,7 +84,7 @@ namespace Literary_tourism.Controllers
                 }
 
                 return Ok(routes_);
-            }
+            //}
         }
 
         /// <summary>
@@ -95,8 +95,8 @@ namespace Literary_tourism.Controllers
         [HttpPost]
         public async Task<IActionResult> PostRoute([FromBody] Routes route)
         {
-            using (LiteraryTourismContext db = new LiteraryTourismContext())
-            {
+            //using (LiteraryTourismContext db = new LiteraryTourismContext())
+            //{
                 if (!ModelState.IsValid)
                 {
                     return BadRequest(ModelState);
@@ -104,7 +104,7 @@ namespace Literary_tourism.Controllers
                 db.Routes.Add(route);
                 await db.SaveChangesAsync();
                 return CreatedAtAction(nameof(GetRoutes), new { route_name = route.Route_name}, route);
-            }
+            //}
         }
     }
 }
